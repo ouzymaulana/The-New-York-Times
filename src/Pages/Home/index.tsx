@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Search from '../../Components/Search'
 import Card from '../../Components/Card'
 import { handleGetData } from '../../Api'
@@ -23,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     getArticleData();
-  },[]);
+  }, []);
 
   return (
     <div>
