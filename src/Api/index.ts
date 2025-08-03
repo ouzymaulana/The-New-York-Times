@@ -14,7 +14,6 @@ export const handleGetData = async (query?: string) => {
         q: query,
       },
     });
-    console.log('response : ', response);
     
     return response.data.response.docs;
   } catch (error) {

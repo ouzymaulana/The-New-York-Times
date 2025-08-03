@@ -14,7 +14,6 @@ const Home = () => {
       setIsLoading(true);
       const results = await handleGetData(searchVal);
       setArticles(results);
-      console.log('result', results);
     } catch (error) {
       console.error(error);
     } finally {

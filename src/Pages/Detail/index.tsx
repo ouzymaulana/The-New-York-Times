@@ -8,9 +8,7 @@ const Detail = () => {
   const { articles } = useArticleStore();
   const [dataDetail, setDataDetail] = useState<ArticleDataType>();
 
-  const getDataById = () => {
-    console.log('ID : ', decodedId);
-    
+  const getDataById = () => {    
       const result = articles.find((item) => item._id === decodedId);
       setDataDetail(result);
   }
